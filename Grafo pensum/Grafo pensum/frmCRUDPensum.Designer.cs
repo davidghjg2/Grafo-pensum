@@ -31,12 +31,8 @@
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.txtAnio = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtSerie = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -46,8 +42,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -65,13 +61,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Controls.Add(this.txtAnio);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txtID);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtSerie);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
@@ -97,13 +90,6 @@
             this.button5.Text = "Limpiar";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(15, 122);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(45, 22);
-            this.numericUpDown1.TabIndex = 30;
-            // 
             // txtAnio
             // 
             this.txtAnio.Location = new System.Drawing.Point(15, 188);
@@ -121,38 +107,9 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "*Codigo";
             // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(134, 26);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(100, 22);
-            this.txtID.TabIndex = 43;
-            this.txtID.Visible = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(110, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 13);
-            this.label3.TabIndex = 42;
-            this.label3.Text = "ID";
-            this.label3.Visible = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.label5.Location = new System.Drawing.Point(15, 92);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(140, 16);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "*Unidades valorativas";
-            // 
             // txtSerie
             // 
-            this.txtSerie.Location = new System.Drawing.Point(14, 56);
+            this.txtSerie.Location = new System.Drawing.Point(15, 45);
             this.txtSerie.Name = "txtSerie";
             this.txtSerie.Size = new System.Drawing.Size(220, 22);
             this.txtSerie.TabIndex = 17;
@@ -163,9 +120,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.label4.Location = new System.Drawing.Point(15, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 16);
+            this.label4.Size = new System.Drawing.Size(140, 16);
             this.label4.TabIndex = 16;
-            this.label4.Text = "*Nombre";
+            this.label4.Text = "*Nombre de la carrera";
             // 
             // groupBox2
             // 
@@ -260,6 +217,21 @@
             this.label1.TabIndex = 52;
             this.label1.Text = "Pensum";
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.LightGreen;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.DarkGreen;
+            this.button3.Location = new System.Drawing.Point(211, 224);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(93, 34);
+            this.button3.TabIndex = 47;
+            this.button3.Text = "Ver grafo";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
             // frmCRUDPensum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,7 +247,6 @@
             this.Text = "frmCRUDPensum";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -288,12 +259,8 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.TextBox txtAnio;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtSerie;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -303,5 +270,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button3;
     }
 }

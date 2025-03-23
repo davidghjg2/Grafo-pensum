@@ -76,7 +76,7 @@
             this.tsCRUDMateria.BackColor = System.Drawing.Color.LightGreen;
             this.tsCRUDMateria.ForeColor = System.Drawing.Color.DarkGreen;
             this.tsCRUDMateria.Name = "tsCRUDMateria";
-            this.tsCRUDMateria.Size = new System.Drawing.Size(123, 22);
+            this.tsCRUDMateria.Size = new System.Drawing.Size(180, 22);
             this.tsCRUDMateria.Text = "Materia";
             this.tsCRUDMateria.Click += new System.EventHandler(this.tsCRUDMateria_Click);
             // 
@@ -85,8 +85,9 @@
             this.tsCRUDPensum.BackColor = System.Drawing.Color.LightGreen;
             this.tsCRUDPensum.ForeColor = System.Drawing.Color.DarkGreen;
             this.tsCRUDPensum.Name = "tsCRUDPensum";
-            this.tsCRUDPensum.Size = new System.Drawing.Size(123, 22);
+            this.tsCRUDPensum.Size = new System.Drawing.Size(180, 22);
             this.tsCRUDPensum.Text = "Pénsum";
+            this.tsCRUDPensum.Click += new System.EventHandler(this.tsCRUDPensum_Click);
             // 
             // toolStripButton3
             // 
@@ -119,16 +120,18 @@
             this.tsMateria.BackColor = System.Drawing.Color.LightGreen;
             this.tsMateria.ForeColor = System.Drawing.Color.DarkGreen;
             this.tsMateria.Name = "tsMateria";
-            this.tsMateria.Size = new System.Drawing.Size(123, 22);
+            this.tsMateria.Size = new System.Drawing.Size(180, 22);
             this.tsMateria.Text = "Materia";
+            this.tsMateria.Click += new System.EventHandler(this.tsMateria_Click);
             // 
             // tsPensum
             // 
             this.tsPensum.BackColor = System.Drawing.Color.LightGreen;
             this.tsPensum.ForeColor = System.Drawing.Color.DarkGreen;
             this.tsPensum.Name = "tsPensum";
-            this.tsPensum.Size = new System.Drawing.Size(123, 22);
+            this.tsPensum.Size = new System.Drawing.Size(180, 22);
             this.tsPensum.Text = "Pénsum";
+            this.tsPensum.Click += new System.EventHandler(this.tsPensum_Click);
             // 
             // tsLogOut
             // 

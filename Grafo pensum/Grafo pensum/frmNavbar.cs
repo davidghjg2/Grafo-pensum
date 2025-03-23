@@ -52,5 +52,20 @@ namespace Grafo_pensum
             login.FormClosed += (s, args) => this.Close();
 
         }
+
+        private void tsPensum_Click(object sender, EventArgs e)
+        {
+            CargarFormulario(new frmVerPensum());
+        }
+
+        private void tsMateria_Click(object sender, EventArgs e)
+        {
+            CargarFormulario(new frmVerMateria());
+        }
+
+        private void tsCRUDPensum_Click(object sender, EventArgs e)
+        {
+            CargarFormulario(new frmCRUDPensum());
+        }
     }
 }
