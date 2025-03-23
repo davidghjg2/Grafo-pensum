@@ -1,0 +1,14 @@
+C:\Users\JARVIS\source\repos\Grafo pensum\Grafo pensum\bin\Debug\Grafo pensum.exe.config
+C:\Users\JARVIS\source\repos\Grafo pensum\Grafo pensum\bin\Debug\Grafo pensum.exe
+C:\Users\JARVIS\source\repos\Grafo pensum\Grafo pensum\bin\Debug\Grafo pensum.pdb
+C:\Users\JARVIS\source\repos\Grafo pensum\Grafo pensum\obj\Debug\Grafo pensum.csproj.AssemblyReference.cache
+C:\Users\JARVIS\source\repos\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmLogin.resources
+C:\Users\JARVIS\source\repos\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmNavbar.resources
+C:\Users\JARVIS\source\repos\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.Properties.Resources.resources
+C:\Users\JARVIS\source\repos\Grafo pensum\Grafo pensum\obj\Debug\Grafo pensum.csproj.GenerateResource.cache
+C:\Users\JARVIS\source\repos\Grafo pensum\Grafo pensum\obj\Debug\Grafo pensum.csproj.CoreCompileInputs.cache
+C:\Users\JARVIS\source\repos\Grafo pensum\Grafo pensum\obj\Debug\Grafo pensum.exe
+C:\Users\JARVIS\source\repos\Grafo pensum\Grafo pensum\obj\Debug\Grafo pensum.pdb
+C:\Users\JARVIS\source\repos\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmInicio.resources
+C:\Users\JARVIS\source\repos\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmCRUDMateria.resources
+C:\Users\JARVIS\source\repos\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmCRUDPensum.resources
