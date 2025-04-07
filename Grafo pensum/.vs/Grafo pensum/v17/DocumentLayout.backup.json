@@ -1,30 +1,142 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\JARVIS\\Documents\\GitHub\\Grafo-pensum\\Grafo pensum\\",
+  "WorkspaceRootPath": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\jarvis\\documents\\github\\grafo-pensum\\grafo pensum\\grafo pensum\\frmnavbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\frmnavbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\carrera\\db\\carreradb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\carrera\\db\\carreradb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\jarvis\\documents\\github\\grafo-pensum\\grafo pensum\\grafo pensum\\frmnavbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\frmnavbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\fmrcrudcarrera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\fmrcrudcarrera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\jarvis\\documents\\github\\grafo-pensum\\grafo pensum\\grafo pensum\\frmvermateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\frmvermateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmverpensum.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmverpensum.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\jarvis\\documents\\github\\grafo-pensum\\grafo pensum\\grafo pensum\\frmverpensum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\frmverpensum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmverpensum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmverpensum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\jarvis\\documents\\github\\grafo-pensum\\grafo pensum\\grafo pensum\\frmcrudpensum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\frmcrudpensum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmvermateria.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmvermateria.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\jarvis\\documents\\github\\grafo-pensum\\grafo pensum\\grafo pensum\\frmcrudmateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\frmcrudmateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmvermateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmvermateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmnavbar.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmnavbar.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmnavbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmnavbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frminicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frminicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmcrudpensum.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmcrudpensum.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmcrudpensum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmcrudpensum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmcrudmateria.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmcrudmateria.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmcrudmateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmcrudmateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\fmrcrudcarrera.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\fmrcrudcarrera.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\fmrcrudcarrera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\fmrcrudcarrera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\carrera\\infra\\carrerainfra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\carrera\\infra\\carrerainfra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\carrera\\db\\carrerainterfazbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\carrera\\db\\carrerainterfazbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\carrera\\db\\mongo\\carreramongodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\carrera\\db\\mongo\\carreramongodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\carrera\\dominio\\carrera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\carrera\\dominio\\carrera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\carrera\\db\\mongo\\carreramongo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\carrera\\db\\mongo\\carreramongo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\carrera\\dominio\\carrerainterfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\carrera\\dominio\\carrerainterfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\grafo pensum\\dominio\\carreras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\dominio\\carreras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmcrudmateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmcrudmateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\dominio\\materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\dominio\\materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmnavbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmnavbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmcrudpensum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmcrudpensum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmvermateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmvermateria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\dominio\\pensum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\dominio\\pensum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|c:\\users\\tariq\\desktop\\grafo-pensum\\grafo pensum\\grafo pensum\\vista\\frmverpensum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D9ED442-1486-48D6-86B8-761E36FD454F}|Grafo pensum\\Grafo pensum.csproj|solutionrelative:grafo pensum\\vista\\frmverpensum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,79 +146,444 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmNavbar.cs",
-              "DocumentMoniker": "C:\\Users\\JARVIS\\Documents\\GitHub\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\frmNavbar.cs",
-              "RelativeDocumentMoniker": "Grafo pensum\\frmNavbar.cs",
-              "ToolTip": "C:\\Users\\JARVIS\\Documents\\GitHub\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\frmNavbar.cs*",
-              "RelativeToolTip": "Grafo pensum\\frmNavbar.cs*",
-              "ViewState": "AgIAACgAAAAAAAAAAAAuwEMAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "frmVerPensum.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmVerPensum.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmVerPensum.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmVerPensum.cs",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmVerPensum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T18:23:47.406Z",
+              "WhenOpened": "2025-04-07T02:17:17.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmVerPensum.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\JARVIS\\Documents\\GitHub\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\frmVerPensum.cs",
-              "RelativeDocumentMoniker": "Grafo pensum\\frmVerPensum.cs",
-              "ToolTip": "C:\\Users\\JARVIS\\Documents\\GitHub\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\frmVerPensum.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Grafo pensum\\frmVerPensum.cs [Dise\u00F1o]",
+              "DocumentIndex": 4,
+              "Title": "frmVerMateria.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmVerMateria.Designer.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmVerMateria.Designer.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmVerMateria.Designer.cs",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmVerMateria.Designer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T17:53:07.552Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmVerMateria.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\JARVIS\\Documents\\GitHub\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\frmVerMateria.cs",
-              "RelativeDocumentMoniker": "Grafo pensum\\frmVerMateria.cs",
-              "ToolTip": "C:\\Users\\JARVIS\\Documents\\GitHub\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\frmVerMateria.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Grafo pensum\\frmVerMateria.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T17:44:09.843Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-04-07T02:17:17.338Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "frmCRUDMateria.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\JARVIS\\Documents\\GitHub\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\frmCRUDMateria.cs",
-              "RelativeDocumentMoniker": "Grafo pensum\\frmCRUDMateria.cs",
-              "ToolTip": "C:\\Users\\JARVIS\\Documents\\GitHub\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\frmCRUDMateria.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Grafo pensum\\frmCRUDMateria.cs [Dise\u00F1o]",
+              "Title": "frmVerMateria.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmVerMateria.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmVerMateria.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmVerMateria.cs",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmVerMateria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T17:42:47.134Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-04-07T02:17:17.272Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmCRUDPensum.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\JARVIS\\Documents\\GitHub\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\frmCRUDPensum.cs",
-              "RelativeDocumentMoniker": "Grafo pensum\\frmCRUDPensum.cs",
-              "ToolTip": "C:\\Users\\JARVIS\\Documents\\GitHub\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\frmCRUDPensum.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Grafo pensum\\frmCRUDPensum.cs [Dise\u00F1o]",
+              "DocumentIndex": 8,
+              "Title": "frmLogin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmLogin.Designer.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmLogin.Designer.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmLogin.Designer.cs",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmLogin.Designer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T17:42:17.338Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-04-07T02:17:17.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmLogin.cs",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T02:17:17.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmInicio.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmInicio.Designer.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmInicio.Designer.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmInicio.Designer.cs",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmInicio.Designer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T02:17:16.915Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmNavbar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\JARVIS\\Documents\\GitHub\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\frmNavbar.cs",
-              "RelativeDocumentMoniker": "Grafo pensum\\frmNavbar.cs",
-              "ToolTip": "C:\\Users\\JARVIS\\Documents\\GitHub\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\frmNavbar.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "Grafo pensum\\frmNavbar.cs [Dise\u00F1o]*",
+              "Title": "fmrCRUDCarrera.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\fmrCRUDCarrera.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\fmrCRUDCarrera.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\fmrCRUDCarrera.cs",
+              "RelativeToolTip": "Grafo pensum\\Vista\\fmrCRUDCarrera.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAnwAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T15:50:50.853Z",
+              "WhenOpened": "2025-04-06T23:52:13.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frmInicio.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmInicio.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmInicio.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmInicio.cs",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmInicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T02:17:16.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarreraDB.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Carrera\\DB\\CarreraDB.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Carrera\\DB\\CarreraDB.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Carrera\\DB\\CarreraDB.cs",
+              "RelativeToolTip": "Grafo pensum\\Carrera\\DB\\CarreraDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T02:05:41.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmVerPensum.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmVerPensum.Designer.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmVerPensum.Designer.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmVerPensum.Designer.cs",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmVerPensum.Designer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T02:17:17.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "frmCRUDPensum.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmCRUDPensum.Designer.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmCRUDPensum.Designer.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmCRUDPensum.Designer.cs",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmCRUDPensum.Designer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T02:17:16.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "frmCRUDPensum.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmCRUDPensum.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmCRUDPensum.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmCRUDPensum.cs",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmCRUDPensum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T02:17:16.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmNavbar.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmNavbar.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmNavbar.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmNavbar.cs",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmNavbar.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAADgv0kAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T00:12:27.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmNavbar.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmNavbar.Designer.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmNavbar.Designer.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmNavbar.Designer.cs",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmNavbar.Designer.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAAwLEAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T00:19:08.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "frmCRUDMateria.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmCRUDMateria.Designer.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmCRUDMateria.Designer.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmCRUDMateria.Designer.cs",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmCRUDMateria.Designer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T02:17:16.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "frmCRUDMateria.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmCRUDMateria.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmCRUDMateria.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmCRUDMateria.cs",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmCRUDMateria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T02:17:16.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "fmrCRUDCarrera.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\fmrCRUDCarrera.Designer.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\fmrCRUDCarrera.Designer.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\fmrCRUDCarrera.Designer.cs",
+              "RelativeToolTip": "Grafo pensum\\Vista\\fmrCRUDCarrera.Designer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T02:17:16.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CarreraInterfazBase.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Carrera\\DB\\CarreraInterfazBase.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Carrera\\DB\\CarreraInterfazBase.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Carrera\\DB\\CarreraInterfazBase.cs",
+              "RelativeToolTip": "Grafo pensum\\Carrera\\DB\\CarreraInterfazBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T01:49:01.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CarreraMongoData.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Carrera\\DB\\Mongo\\CarreraMongoData.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Carrera\\DB\\Mongo\\CarreraMongoData.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Carrera\\DB\\Mongo\\CarreraMongoData.cs",
+              "RelativeToolTip": "Grafo pensum\\Carrera\\DB\\Mongo\\CarreraMongoData.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAvwCcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T01:48:01.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CarreraInfra.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Carrera\\Infra\\CarreraInfra.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Carrera\\Infra\\CarreraInfra.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Carrera\\Infra\\CarreraInfra.cs",
+              "RelativeToolTip": "Grafo pensum\\Carrera\\Infra\\CarreraInfra.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T01:24:17.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CarreraInterfaz.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Carrera\\Dominio\\CarreraInterfaz.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Carrera\\Dominio\\CarreraInterfaz.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Carrera\\Dominio\\CarreraInterfaz.cs",
+              "RelativeToolTip": "Grafo pensum\\Carrera\\Dominio\\CarreraInterfaz.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAD4vwoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T01:15:30.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Carrera.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Carrera\\Dominio\\Carrera.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Carrera\\Dominio\\Carrera.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Carrera\\Dominio\\Carrera.cs",
+              "RelativeToolTip": "Grafo pensum\\Carrera\\Dominio\\Carrera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T01:18:04.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CarreraMongo.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Carrera\\DB\\Mongo\\CarreraMongo.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Carrera\\DB\\Mongo\\CarreraMongo.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Carrera\\DB\\Mongo\\CarreraMongo.cs",
+              "RelativeToolTip": "Grafo pensum\\Carrera\\DB\\Mongo\\CarreraMongo.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvwgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T01:14:32.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "fmrCRUDCarrera.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\fmrCRUDCarrera.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\fmrCRUDCarrera.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\fmrCRUDCarrera.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Grafo pensum\\Vista\\fmrCRUDCarrera.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T23:50:06.063Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "frmCRUDMateria.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmCRUDMateria.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmCRUDMateria.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmCRUDMateria.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmCRUDMateria.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T00:01:50.473Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "frmInicio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmInicio.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmInicio.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmInicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmInicio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T00:02:01.463Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "frmCRUDPensum.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmCRUDPensum.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmCRUDPensum.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmCRUDPensum.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmCRUDPensum.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T00:01:57.682Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Materia.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Dominio\\Materia.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Dominio\\Materia.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Dominio\\Materia.cs",
+              "RelativeToolTip": "Grafo pensum\\Dominio\\Materia.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAEwBMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T23:47:03.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Carreras.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Dominio\\Carreras.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Dominio\\Carreras.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Dominio\\Carreras.cs",
+              "RelativeToolTip": "Grafo pensum\\Dominio\\Carreras.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T00:10:34.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "frmNavbar.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmNavbar.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmNavbar.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmNavbar.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmNavbar.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T00:02:05.816Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Pensum.cs",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Dominio\\Pensum.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Dominio\\Pensum.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Dominio\\Pensum.cs",
+              "RelativeToolTip": "Grafo pensum\\Dominio\\Pensum.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAuwBoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T23:47:21.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "frmLogin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmLogin.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T00:02:03.623Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "frmVerMateria.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmVerMateria.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmVerMateria.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmVerMateria.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmVerMateria.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T00:02:06.949Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "frmVerPensum.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmVerPensum.cs",
+              "RelativeDocumentMoniker": "Grafo pensum\\Vista\\frmVerPensum.cs",
+              "ToolTip": "C:\\Users\\tariq\\Desktop\\Grafo-pensum\\Grafo pensum\\Grafo pensum\\Vista\\frmVerPensum.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Grafo pensum\\Vista\\frmVerPensum.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T00:02:15.461Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
