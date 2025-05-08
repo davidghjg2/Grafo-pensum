@@ -36,6 +36,7 @@ namespace Grafo_pensum
             form.TopLevel = false;  // Evita que sea una ventana independiente
             form.FormBorderStyle = FormBorderStyle.None;  // Sin bordes
             form.Dock = DockStyle.Top;  // Ajustar ancho al panel
+            form.StartPosition = FormStartPosition.CenterParent;
             panelContenedor.Controls.Add(form);
             form.Show();
         }

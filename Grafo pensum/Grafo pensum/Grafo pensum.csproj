@@ -159,7 +159,6 @@
     <Compile Include="Carrera\DB\Mongo\CarreraMongo.cs" />
     <Compile Include="Carrera\Infra\CarreraInfra.cs" />
     <Compile Include="Carrera\DB\Mongo\CarreraMongoData.cs" />
-    <Compile Include="Dominio\Carreras.cs" />
     <Compile Include="Vista\fmrCRUDCarrera.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,8 +207,8 @@
     <Compile Include="Vista\frmVerPensum.Designer.cs">
       <DependentUpon>frmVerPensum.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dominio\Materia.cs" />
-    <Compile Include="Dominio\Pensum.cs" />
+    <Compile Include="Materia\Materia.cs" />
+    <Compile Include="Pensum\Pensum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Vista\fmrCRUDCarrera.resx">

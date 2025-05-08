@@ -10,7 +10,7 @@ namespace Grafo_pensum
     {
         public struct req
         {
-            public Carreras carrera;
+            public Carrera.Dominio.Carrera carrera;
             public string codigos;
         }
 
@@ -31,13 +31,13 @@ namespace Grafo_pensum
             desb = new req[0];
         }
 
-        public void AgregarSiguiente(Materia desbloquea, Carreras carrera)
+        public void AgregarSiguiente(Materia desbloquea, Carrera.Dominio.Carrera carrera)
         {
             Array.Resize(ref desb, desb.Length + 1);
             desb[desb.Length - 1] = new req { carrera = carrera, codigos = desbloquea.Nombre };
         }
 
-        public void AgregarRequisito(Materia requisito, Carreras carrera)
+        public void AgregarRequisito(Materia requisito, Carrera.Dominio.Carrera carrera)
         {
             Array.Resize(ref reqs, reqs.Length + 1);
             reqs[reqs.Length - 1] = new req { carrera = carrera, codigos = requisito.Nombre };
