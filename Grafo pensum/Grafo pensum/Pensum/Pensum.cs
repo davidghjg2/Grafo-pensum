@@ -9,9 +9,9 @@ namespace Grafo_pensum
     internal class Pensum
     {
         private Materia[] nodos;
-        private Carreras carrera;
+        private Carrera.Dominio.Carrera carrera;
 
-        public Pensum(Carreras carrera)
+        public Pensum(Carrera.Dominio.Carrera carrera)
         {
             nodos = new Materia[0];
             this.carrera = carrera;
@@ -24,7 +24,7 @@ namespace Grafo_pensum
             nodos[nodos.Length - 1] = nodo;
         }
 
-        public void EnlazarNodo(string nombre, Carreras carrera, string requisito)
+        public void EnlazarNodo(string nombre, Carrera.Dominio.Carrera carrera, string requisito)
         {
             Materia nodo = buscarNodo(nombre);
             Materia req = buscarNodo(requisito);
