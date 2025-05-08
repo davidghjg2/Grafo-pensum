@@ -262,6 +262,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Carreras.csv" />
     <None Include="Resources\ejemplo pensum.drawio.png" />
   </ItemGroup>
   <ItemGroup>

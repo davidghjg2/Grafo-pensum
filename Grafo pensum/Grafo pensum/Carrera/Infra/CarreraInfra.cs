@@ -14,13 +14,14 @@ namespace Grafo_pensum.Carrera.Infra
         private readonly CarreraInterfazBase db = CarreraDB.CrearBase();
         public (bool, Exception) InsertarCarrera(Dominio.Carrera carrera)
         {
-            (bool, Exception) result = db.InsertarCarrera (carrera);
+            (bool, Exception) result = db.InsertarCarrera(carrera);
             return result;
         }
 
         public (bool, Exception) InsertarCarrera(Dominio.Carrera[] carrera)
         {
-            return (true, null);
+            (bool, Exception) result = db.InsertarCarrera(carrera);
+            return result;
         }
 
         public (Dominio.Carrera, Exception) ObtenerCarrera(string carrera)

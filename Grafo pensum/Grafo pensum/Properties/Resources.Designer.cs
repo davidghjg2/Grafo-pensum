@@ -61,6 +61,25 @@ namespace Grafo_pensum.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Ingeniera Mecanico;Ingenieria
+        ///Ingenieria Industrial;Ingenieria
+        ///Ingenieria Biomedica;Ingenieria
+        ///Ingenieria en Ciencias de la Computacion;Ingenieria
+        ///Ingenieria Electrica;Ingenieria
+        ///Licenciatura en Teologia Pastoral;Licenciatura
+        ///Licenciatura en Ciencias de la Comunicacion;Licenciatura
+        ///Licenciatura en Diseno Grafico;Licenciatura
+        ///Licenciatura en Diseno Industrial;Licenciatura
+        ///Licenciatura en Marketing;Licenciatura
+        ///.
+        /// </summary>
+        internal static string Carreras {
+            get {
+                return ResourceManager.GetString("Carreras", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap ejemplo_pensum_drawio {

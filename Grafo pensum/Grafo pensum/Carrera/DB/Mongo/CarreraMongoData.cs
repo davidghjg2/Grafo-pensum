@@ -42,6 +42,35 @@ namespace Grafo_pensum.DB.Mongo.Carrera
             
         }
 
+        public (bool, Exception) InsertarCarrera(Grafo_pensum.Carrera.Dominio.Carrera[] carrera)
+        {
+            try
+            {
+                var collection = database.GetCollection<CarreraMongo>("carreras");
+
+                CarreraMongo[] data = new CarreraMongo[0];
+
+                foreach (Grafo_pensum.Carrera.Dominio.Carrera c in carrera)
+                {
+                    Array.Resize(ref data, data.Length + 1);
+                    data[data.Length - 1] = new CarreraMongo
+                    {
+                        Nombre = c.Nombre,
+                        Departamento= c.Departamento,
+                    };
+                }
+
+                collection.InsertMany(data);
+
+                return (true, null);
+            }
+            catch (Exception e)
+            {
+
+                return (false, e);
+            }
+        }
+
         public (Grafo_pensum.Carrera.Dominio.Carrera[], Exception) ObtenerCarreras()
         {
             try

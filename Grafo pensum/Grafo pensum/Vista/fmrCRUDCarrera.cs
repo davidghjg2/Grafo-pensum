@@ -11,6 +11,7 @@ using MongoDB.Driver;
 using MongoDB.Bson;
 using Grafo_pensum.Carrera.Infra;
 using DnsClient.Protocol;
+using System.IO;
 
 namespace Grafo_pensum.Infra.Vista
 {
@@ -57,10 +58,60 @@ namespace Grafo_pensum.Infra.Vista
             return carreras;
         }
 
+        private (Carrera.Dominio.Carrera[] , Exception) leerArchivo()
+        {
+            try
+            {
+                Carrera.Dominio.Carrera[] carreras = new Carrera.Dominio.Carrera[0];
+
+                using(OpenFileDialog dlg = new OpenFileDialog())
+                {
+                    dlg.Filter = "Archivos delimitado por comas (*.csv)|*.csv";
+                    dlg.FilterIndex = 1;
+
+                    if(dlg.ShowDialog() == DialogResult.OK)
+                    {
+                        string ruta = dlg.FileName;
+                        string[] lineas = File.ReadAllLines(ruta);
+
+                        for(int i = 0; i < lineas.Length; i++)
+                        {
+                            string[] partes = lineas[i].Split(';');
+                            Array.Resize(ref carreras, carreras.Length + 1);
+                            carreras[carreras.Length - 1] = new Carrera.Dominio.Carrera
+                            {
+                                Nombre = partes[0],
+                                Departamento = partes[1]
+                            };
+                        }
+                    }
+                }
+                return (carreras, null);
+            }
+            catch (Exception e)
+            {
+                return (null, e);
+            }
+
+        }
+
+        private Exception insertarCarreras()
+        {
+            (Carrera.Dominio.Carrera[], Exception) data = leerArchivo();
+
+            if (data.Item2 != null)
+                return data.Item2;
+
+            (bool, Exception) result = carreraInfra.InsertarCarrera(data.Item1);
+
+            if (!result.Item1)
+                return result.Item2;
+            else
+                return null;
+        }
+
         private Exception insertarCarrera()
         {
-            
-
             (bool, Exception) result = carreraInfra.InsertarCarrera(llenarDatos());
 
             if (!result.Item1)
@@ -117,6 +168,9 @@ namespace Grafo_pensum.Infra.Vista
                 txtID.Text = row.Cells["ID"].Value.ToString();
                 txtNombre.Text = row.Cells["Nombre"].Value.ToString();
                 txtDepartamento.Text = row.Cells["Departamento"].Value.ToString();
+                button2.Enabled = true;
+                button4.Enabled = true;
+                button1.Enabled = false;
             }
         }
 
@@ -133,6 +187,9 @@ namespace Grafo_pensum.Infra.Vista
             }
 
             obtenerCarreras();
+            button2.Enabled = false;
+            button4.Enabled = false;
+            button1.Enabled = true;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -149,6 +206,24 @@ namespace Grafo_pensum.Infra.Vista
             else
             {
                 MessageBox.Show("Dato Eliminado");
+                limpiar();
+            }
+
+            obtenerCarreras();
+            button2.Enabled = false;
+            button4.Enabled = false;
+            button1.Enabled = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Exception ex = insertarCarreras();
+
+            if (ex != null)
+                MessageBox.Show(ex.Message);
+            else
+            {
+                MessageBox.Show("Datos Incertados");
                 limpiar();
             }
 
