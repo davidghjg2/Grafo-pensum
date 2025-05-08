@@ -10,7 +10,7 @@ namespace Grafo_pensum.DB
     internal interface CarreraInterfazBase
     {
         (bool, Exception) InsertarCarrera(Grafo_pensum.Carrera.Dominio.Carrera carrera);
-        //(bool, Exception) InsertarCarrera(Carrera.Dominio.Carrera[] carreras);
+        (bool, Exception) InsertarCarrera(Grafo_pensum.Carrera.Dominio.Carrera[] carreras);
         //(Grafo_pensum.Carrera.Dominio.Carrera, Exception) ObtenerCarrera(string carrera);
         //(Carrera.Dominio.Carrera[], Exception) ObtenerCarreras(string carrera);
         (Grafo_pensum.Carrera.Dominio.Carrera[], Exception) ObtenerCarreras();
