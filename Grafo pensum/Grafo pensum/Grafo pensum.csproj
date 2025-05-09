@@ -159,6 +159,12 @@
     <Compile Include="Carrera\DB\Mongo\CarreraMongo.cs" />
     <Compile Include="Carrera\Infra\CarreraInfra.cs" />
     <Compile Include="Carrera\DB\Mongo\CarreraMongoData.cs" />
+    <Compile Include="Materia\DB\MateriaDB.cs" />
+    <Compile Include="Materia\DB\MateriaInterfazBase.cs" />
+    <Compile Include="Materia\DB\Mongo\MateriaMongo.cs" />
+    <Compile Include="Materia\DB\Mongo\MateriaMongoData.cs" />
+    <Compile Include="Materia\Dominio\MateriaInterfaz.cs" />
+    <Compile Include="Materia\Infra\MateriaInfra.cs" />
     <Compile Include="Vista\fmrCRUDCarrera.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,7 +213,7 @@
     <Compile Include="Vista\frmVerPensum.Designer.cs">
       <DependentUpon>frmVerPensum.cs</DependentUpon>
     </Compile>
-    <Compile Include="Materia\Materia.cs" />
+    <Compile Include="Materia\Dominio\Materia.cs" />
     <Compile Include="Pensum\Pensum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -257,6 +263,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\Materias.csv" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

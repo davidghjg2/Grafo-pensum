@@ -88,5 +88,17 @@ namespace Grafo_pensum.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a CAD501;Calculo Diferencial;4;Estudia el cambio en funciones mediante límites y derivadas, analizando razones de cambio instantáneo, pendientes y optimización
+        ///QUG501;Quimica General;4;Es la base científica que estudia la materia, su composición, estructura, propiedades y transformaciones, abarcando desde partículas subatómicas hasta reacciones macroscópicas
+        ///ANF231; Antropologia filosofica;3;Explora el ser humano desde una perspectiva fundamental, cuestionando su naturaleza, esencia y lugar en el mundo
+        /// PR [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string Materias {
+            get {
+                return ResourceManager.GetString("Materias", resourceCulture);
+            }
+        }
     }
 }
