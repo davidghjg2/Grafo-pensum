@@ -8,8 +8,8 @@ namespace Grafo_pensum.Pensum.Dominio
 {
     internal class Pensum
     {
-        public string Id;
-        public string Codigo;
+        public string Id { get; set; }
+        public string Codigo { get; set; }
         public Materia.Dominio.Materia[] nodos;
         public Carrera.Dominio.Carrera carrera;
 
