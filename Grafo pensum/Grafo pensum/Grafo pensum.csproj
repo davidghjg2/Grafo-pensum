@@ -165,6 +165,12 @@
     <Compile Include="Materia\DB\Mongo\MateriaMongoData.cs" />
     <Compile Include="Materia\Dominio\MateriaInterfaz.cs" />
     <Compile Include="Materia\Infra\MateriaInfra.cs" />
+    <Compile Include="Pensum\DB\Mongo\PensumMongo.cs" />
+    <Compile Include="Pensum\DB\Mongo\PensumMongoData.cs" />
+    <Compile Include="Pensum\DB\PensumDB.cs" />
+    <Compile Include="Pensum\DB\PensumInterfazBase.cs" />
+    <Compile Include="Pensum\Dominio\PensumInterfaz.cs" />
+    <Compile Include="Pensum\Infra\PensumInfra.cs" />
     <Compile Include="Vista\fmrCRUDCarrera.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,7 +220,7 @@
       <DependentUpon>frmVerPensum.cs</DependentUpon>
     </Compile>
     <Compile Include="Materia\Dominio\Materia.cs" />
-    <Compile Include="Pensum\Pensum.cs" />
+    <Compile Include="Pensum\Dominio\Pensum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Vista\fmrCRUDCarrera.resx">

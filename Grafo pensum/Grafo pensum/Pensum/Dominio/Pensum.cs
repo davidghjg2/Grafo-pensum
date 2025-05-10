@@ -4,12 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Grafo_pensum
+namespace Grafo_pensum.Pensum.Dominio
 {
     internal class Pensum
     {
-        private Materia.Dominio.Materia[] nodos;
-        private Carrera.Dominio.Carrera carrera;
+        public string Id;
+        public string Codigo;
+        public Materia.Dominio.Materia[] nodos;
+        public Carrera.Dominio.Carrera carrera;
+
+        public Pensum() {
+            Id = string.Empty;
+            nodos = new Materia.Dominio.Materia[0];
+            carrera = null;
+            Codigo = string.Empty;
+        }
 
         public Pensum(Carrera.Dominio.Carrera carrera)
         {
@@ -17,18 +26,30 @@ namespace Grafo_pensum
             this.carrera = carrera;
         }
 
-        public void AgregarNodo(string nombre)
+        public Pensum(Carrera.Dominio.Carrera carrera, string id)
         {
-            Materia.Dominio.Materia nodo = new Materia.Dominio.Materia(nombre);
-            Array.Resize(ref nodos, nodos.Length + 1);
-            nodos[nodos.Length - 1] = nodo;
+            nodos = new Materia.Dominio.Materia[0];
+            this.Id = id;
+            this.carrera = carrera;
         }
 
-        public void EnlazarNodo(string nombre, Carrera.Dominio.Carrera carrera, string requisito)
+        public Pensum(Carrera.Dominio.Carrera carrera, Materia.Dominio.Materia[] materia, string codigo)
         {
-            Materia.Dominio.Materia nodo = buscarNodo(nombre);
+            nodos = materia;
+            this.carrera = carrera;
+            Codigo= codigo;
+        }
+
+        public void AgregarNodo(Materia.Dominio.Materia materia)
+        {
+            Array.Resize(ref nodos, nodos.Length + 1);
+            nodos[nodos.Length - 1] = materia;
+        }
+
+        public void EnlazarNodo(Materia.Dominio.Materia nodo, string requisito)
+        {
             Materia.Dominio.Materia req = buscarNodo(requisito);
-            nodo.AgregarRequisito(req, carrera);
+            nodo.AgregarRequisito(req, this.carrera);
         }
 
         private void restaurar()
@@ -41,7 +62,7 @@ namespace Grafo_pensum
         {
             foreach (Materia.Dominio.Materia nodo in nodos)
             {
-                if (nodo.Nombre == nombre)
+                if (nodo.Codigo == nombre)
                     return nodo;
             }
             return null;
