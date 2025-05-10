@@ -26,6 +26,19 @@ namespace Grafo_pensum.Materia.DB.Mongo
         [BsonElement("uv")]
         public int Uv {  get; set; }
 
+        [Serializable]
+        public struct req
+        {
+            public Carrera.Dominio.Carrera carrera;
+            public string codigos;
+
+            public req(Carrera.Dominio.Carrera carrera, string codigos)
+            {
+                this.carrera = carrera;
+                this.codigos = codigos;
+            }
+        }
+
         public MateriaMongo() 
         { 
             Nombre = string.Empty;

@@ -6,17 +6,31 @@ using System.Threading.Tasks;
 
 namespace Grafo_pensum.Materia.Dominio
 {
-    internal class Materia
+    [Serializable]
+    public class Materia
     {
-        public struct req
+        [Serializable]
+        public class req
         {
-            public Carrera.Dominio.Carrera carrera;
-            public string codigos;
+            public Carrera.Dominio.Carrera carrera { get; set; }
+            public string codigos { get; set; }
+
+            public req()  // Necesario para Mongo
+            {
+                carrera = null;
+                codigos = string.Empty;
+            }
+
+            public req(Carrera.Dominio.Carrera carrera, string codigos)
+            {
+                this.carrera = carrera;
+                this.codigos = codigos;
+            }
         }
 
-        public string Id;
+        public string Id { get; set; }
         public string Codigo;
-        public string Nombre;
+        public string Nombre { get; set; }
         public bool Visitado;
         public bool EnProceso;
         public string Descripcion;
@@ -61,13 +75,13 @@ namespace Grafo_pensum.Materia.Dominio
         public void AgregarSiguiente(Materia desbloquea, Carrera.Dominio.Carrera carrera)
         {
             Array.Resize(ref desb, desb.Length + 1);
-            desb[desb.Length - 1] = new req { carrera = carrera, codigos = desbloquea.Nombre };
+            desb[desb.Length - 1] = new req(carrera, desbloquea.Codigo);
         }
 
         public void AgregarRequisito(Materia requisito, Carrera.Dominio.Carrera carrera)
         {
             Array.Resize(ref reqs, reqs.Length + 1);
-            reqs[reqs.Length - 1] = new req { carrera = carrera, codigos = requisito.Nombre };
+            reqs[reqs.Length - 1] = new req(carrera, requisito.Codigo);
             requisito.AgregarSiguiente(this, carrera);
         }
     }
