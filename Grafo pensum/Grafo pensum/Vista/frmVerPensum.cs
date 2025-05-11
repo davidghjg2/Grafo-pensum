@@ -75,14 +75,14 @@ namespace Grafo_pensum
 
             var lblNumero = new Label
             {
-                Text = $"Número: {objeto.uv}",
+                Text = $"Numero: {objeto.uv}",
                 Location = new Point(10, 40),
                 AutoSize = true
             };
 
             var lblCodigo = new Label
             {
-                Text = $"Código: {objeto.Codigo}",
+                Text = $"Uv: {objeto.Codigo}",
                 Location = new Point(10, 70),
                 AutoSize = true
             };
@@ -112,11 +112,12 @@ namespace Grafo_pensum
         private void obtenerPensum(Pensum.Dominio.Pensum p)
         {
             Pensum.Dominio.Pensum pensum = p;
+            Materia.Dominio.Materia[] m = p.BFS();
 
             tableLayoutPanel1.Controls.Clear();
             tableLayoutPanel1.RowStyles.Clear();
 
-            int elementosAMostrar = p.nodos.Length - 1;
+            int elementosAMostrar = m.Length - 1;
             int filas = (int)Math.Ceiling(elementosAMostrar / 4.0);
             tableLayoutPanel1.RowCount = filas;
 
@@ -125,21 +126,15 @@ namespace Grafo_pensum
                 tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.AutoSize));
             }
 
-            for (int i = 1; i < p.nodos.Length; i++)
+            for (int i = 1; i < m.Length; i++)
             {
                 int indiceMostrado = i - 1;
                 int fila = indiceMostrado / 4;
                 int columna = indiceMostrado % 4;
 
-                var carta = CrearCarta(p.nodos[i]);
+                var carta = CrearCarta(m[i]);
                 tableLayoutPanel1.Controls.Add(carta, columna, fila);
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Pensum.Dominio.Pensum p = (Pensum.Dominio.Pensum) comboBox1.SelectedItem;
-            obtenerPensum(p);
         }
 
         private void button1_Click_1(object sender, EventArgs e)

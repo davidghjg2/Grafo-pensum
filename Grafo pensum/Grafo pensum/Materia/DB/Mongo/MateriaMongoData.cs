@@ -108,7 +108,8 @@ namespace Grafo_pensum.Materia.DB.Mongo
             {
                 var collection = database.GetCollection<MateriaMongo>("Materias");
                 var filter = Builders<MateriaMongo>.Filter.Eq(c => c.Id, Materia.Id);
-                var update = Builders<MateriaMongo>.Update.Set(c => c.Nombre, Materia.Nombre).Set(c => c.Uv, Materia.uv).Set(c => c.Descripcion, Materia.Descripcion).Set(c => c.Codigo, Materia.Codigo);
+                var update = Builders<MateriaMongo>.Update.Set(c => c.Nombre, Materia.Nombre).Set(c => c.Uv, Materia.uv).Set(c => c.Descripcion, Materia.Descripcion)
+                    .Set(c => c.Codigo, Materia.Codigo);
                 collection.UpdateOne(filter, update);
                 return (true, null);
             }

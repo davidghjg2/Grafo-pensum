@@ -49,6 +49,7 @@ namespace Grafo_pensum.Pensum.Dominio
         public void EnlazarNodo(Materia.Dominio.Materia nodo, string requisito)
         {
             Materia.Dominio.Materia req = buscarNodo(requisito);
+            nodo.nivel = req.nivel + 1;
             nodo.AgregarRequisito(req, this.carrera);
         }
 
@@ -68,7 +69,7 @@ namespace Grafo_pensum.Pensum.Dominio
             return null;
         }
 
-        private int DFS(Materia.Dominio.Materia nodo, string[] orden, int indice)
+        private int DFS(Materia.Dominio.Materia nodo, Materia.Dominio.Materia[] orden, int indice)
         {
             if (nodo.EnProceso)
                 throw new Exception("El grafo tiene un ciclo, no se puede ordenar.");
@@ -84,7 +85,7 @@ namespace Grafo_pensum.Pensum.Dominio
 
                 nodo.EnProceso = false;
                 nodo.Visitado = true;
-                orden[indice] = nodo.Nombre;
+                orden[indice] = nodo;
                 indice++;
             }
             return indice;
@@ -118,6 +119,45 @@ namespace Grafo_pensum.Pensum.Dominio
             }
         }
 
+        private int alturaGrafo(Materia.Dominio.Materia inicio)
+        {
+            if (inicio == null)
+                return 0;
+
+            int maxAultura = 0;
+
+            foreach (Materia.Dominio.Materia.req requisito in inicio.desb)
+            {
+                Materia.Dominio.Materia desb = buscarNodo(requisito.codigos);
+                int altura = alturaGrafo(desb);
+
+                if(altura > maxAultura)
+                    maxAultura = altura;
+            }
+
+            return maxAultura + 1;
+        }
+
+        private void BFS(ref Materia.Dominio.Materia[] materias, Materia.Dominio.Materia materia, int nivel)
+        {
+            if(materia == null)
+                return;
+
+            if(nivel == 1)
+            {
+                Array.Resize(ref materias, materias.Length + 1);
+                materias[materias.Length - 1] = materia;
+            }
+            else if(nivel > 1)
+            {
+                foreach(Materia.Dominio.Materia.req deb in materia.desb)
+                {
+                    Materia.Dominio.Materia requisito = buscarNodo(deb.codigos);
+                    BFS(ref materias, requisito, nivel - 1);
+                }
+            }
+        }
+
         public string[] ObtenerRequisitos(string materia)
         {
             Materia.Dominio.Materia nodo = buscarNodo(materia);
@@ -142,10 +182,10 @@ namespace Grafo_pensum.Pensum.Dominio
             return desbloqueadas;
         }
 
-        public string[] ObtenerMaterias()
+        public Materia.Dominio.Materia[] ObtenerMaterias()
         {
             restaurar();
-            string[] orden = new string[nodos.Length];
+            Materia.Dominio.Materia[] orden = new Materia.Dominio.Materia[nodos.Length];
             int indice = 0;
 
             foreach (Materia.Dominio.Materia nodo in nodos)
@@ -156,6 +196,19 @@ namespace Grafo_pensum.Pensum.Dominio
 
             Array.Reverse(orden);
             return orden;
+        }
+
+        public Materia.Dominio.Materia[] BFS()
+        {
+            restaurar();
+            Materia.Dominio.Materia[] datos = new Materia.Dominio.Materia[0];
+            
+            int altura = alturaGrafo(nodos[0]);
+
+            for (int i = 1; i <= altura; i++)
+                BFS(ref datos, nodos[0], i);
+
+            return datos;
         }
     }
 }
