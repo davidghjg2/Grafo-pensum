@@ -40,17 +40,32 @@ namespace Grafo_pensum.Pensum.Dominio
             Codigo= codigo;
         }
 
-        public void AgregarNodo(Materia.Dominio.Materia materia)
+        public Exception AgregarNodo(Materia.Dominio.Materia materia)
         {
+            if (buscarNodo(materia.Codigo) != null)
+                return new Exception("No se pueden tener materias repetidas en el pensum");
+
             Array.Resize(ref nodos, nodos.Length + 1);
             nodos[nodos.Length - 1] = materia;
+            return null;
         }
 
-        public void EnlazarNodo(Materia.Dominio.Materia nodo, string requisito)
+        public Exception EnlazarNodo(string nodo, string requisito)
         {
+            Materia.Dominio.Materia materia = buscarNodo(nodo);
             Materia.Dominio.Materia req = buscarNodo(requisito);
-            nodo.nivel = req.nivel + 1;
-            nodo.AgregarRequisito(req, this.carrera);
+
+            if(req.Codigo == materia.Codigo)
+                return new Exception("Una materia noo puede definir como requisito a si mismo");
+
+            bool validacion = materia.reqs.Any(r => r.codigos == req.Codigo);
+
+            if (validacion)
+                return new Exception("No se puede agregar como requsito a una misma materia mas de 1 vez");
+
+            materia.nivel = req.nivel + 1;
+            materia.AgregarRequisito(req, this.carrera);
+            return null;
         }
 
         private void restaurar()
