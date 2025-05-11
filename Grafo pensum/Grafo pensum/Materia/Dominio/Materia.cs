@@ -35,6 +35,7 @@ namespace Grafo_pensum.Materia.Dominio
         public bool EnProceso;
         public string Descripcion;
         public int uv;
+        public int nivel;
         public req[] reqs;
         public req[] desb;
 
@@ -48,6 +49,7 @@ namespace Grafo_pensum.Materia.Dominio
             desb = new req[0];
             Descripcion = string.Empty;
             Codigo = string.Empty;
+            nivel = 1;
         }
 
         public Materia(string nombre)
@@ -59,6 +61,7 @@ namespace Grafo_pensum.Materia.Dominio
             desb = new req[0];
             Descripcion = string.Empty;
             Codigo= string.Empty;
+            nivel=1;
         }
 
         public Materia(string nombre, string descripcion, string codigo)
@@ -70,6 +73,7 @@ namespace Grafo_pensum.Materia.Dominio
             desb = new req[0];
             Descripcion = descripcion;
             Codigo = codigo;
+            nivel=1;
         }
 
         public void AgregarSiguiente(Materia desbloquea, Carrera.Dominio.Carrera carrera)

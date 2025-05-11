@@ -41,6 +41,21 @@ namespace Grafo_pensum
             txtSerie.Focus();
         }
 
+        private (bool, Exception) validaciones()
+        {
+            if (txtSerie.Text.Trim() == "")
+                return (false, new Exception("No se permiten campos vacios en Nombre"));
+            if (textBox1.Text.Trim() == "")
+                return (false, new Exception("No se permiten campos vacios en Descripcion"));
+            if (textBox1.Text.Trim() == "")
+                return (false, new Exception("No se permiten campos vacios en Descripcion"));
+            if (txtAnio.Text.Trim() == "")
+                return (false, new Exception("No se permiten campos vacios en Codigo"));
+            if (numericUpDown1.Value < 0 || numericUpDown1.Value > 4)
+                return (false, new Exception("El rango de valores de UV es de 0 a 4"));
+
+            return (true, null);
+        }
         private Materia.Dominio.Materia llenarDatos()
         {
             Materia.Dominio.Materia materia = new Materia.Dominio.Materia();
@@ -162,6 +177,14 @@ namespace Grafo_pensum
 
         private void button1_Click(object sender, EventArgs e)
         {
+            (bool, Exception) result = validaciones();
+
+            if (!result.Item1)
+            {
+                MessageBox.Show(result.Item2.Message);
+                return;
+            }
+
             button1.Enabled = false;
 
             Exception ex = insertarMateria();
@@ -176,6 +199,15 @@ namespace Grafo_pensum
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            (bool, Exception) result = validaciones();
+
+            if (!result.Item1)
+            {
+                MessageBox.Show(result.Item2.Message);
+                return;
+            }
+
             button2.Enabled = false;
 
             Exception ex = actualizarMateria();

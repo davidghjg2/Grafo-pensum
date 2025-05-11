@@ -95,6 +95,16 @@ namespace Grafo_pensum.Infra.Vista
 
         }
 
+        private (bool, Exception) validaciones()
+        {
+            if(txtNombre.Text.Trim() == "")
+                return (false, new Exception("No se permiten campos vacios en Nombre"));
+            if (txtDepartamento.Text.Trim() == "")
+                return (false, new Exception("No se permiten campos vacios en Departamento"));
+
+            return (true, null);
+        }
+
         private Exception insertarCarreras()
         {
             (Carrera.Dominio.Carrera[], Exception) data = leerArchivo();
@@ -147,7 +157,15 @@ namespace Grafo_pensum.Infra.Vista
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Exception ex = insertarCarrera();
+            (bool, Exception) result = validaciones();
+
+            if (!result.Item1)
+            {
+                MessageBox.Show(result.Item2.Message);
+                return;
+            }
+
+            Exception ex = insertarCarrera();   
 
             if(ex != null) 
                 MessageBox.Show(ex.Message);
@@ -176,6 +194,14 @@ namespace Grafo_pensum.Infra.Vista
 
         private void button2_Click(object sender, EventArgs e)
         {
+            (bool, Exception) result = validaciones();
+
+            if (!result.Item1)
+            {
+                MessageBox.Show(result.Item2.Message);
+                return;
+            }
+
             Exception ex = actualizarCarrera();
 
             if (ex != null)

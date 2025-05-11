@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,17 +48,11 @@ namespace Grafo_pensum
             comboBox1.ValueMember = "Id";
         }
 
-        private void obtenerMaterias()
+        private void obtenerMaterias(Pensum.Dominio.Pensum p)
         {
-            (Materia.Dominio.Materia[], Exception) data = materiaInfra.ObtenerMaterias();
+            Materia.Dominio.Materia[] data = p.ObtenerMaterias();
 
-            if (data.Item2 != null)
-            {
-                MessageBox.Show(data.Item2.Message);
-                return;
-            }
-
-            comboBox2.DataSource = data.Item1;
+            comboBox2.DataSource = data;
             comboBox2.DisplayMember = "Nombre";
             comboBox2.ValueMember = "Id";
         }
@@ -118,9 +114,11 @@ namespace Grafo_pensum
 
             Materia.Dominio.Materia materia = (Materia.Dominio.Materia) comboBox3.SelectedItem;
 
-            p.AgregarNodo(materia);
+            Exception ex = p.AgregarNodo(materia);
 
-            if(comboBox2.Visible == true)
+            if (ex != null && comboBox2.Visible == false) return ex;
+
+            if(comboBox2.Visible == true && comboBox2.SelectedItem != null)
             {
                 Materia.Dominio.Materia req = (Materia.Dominio.Materia)comboBox2.SelectedItem;
 
@@ -129,7 +127,9 @@ namespace Grafo_pensum
                     errorProvider1.SetError(comboBox2, "Una materia no puede ser requsito de si misma");
                 }
 
-                p.EnlazarNodo(materia, req.Codigo);
+                Exception exp = p.EnlazarNodo(materia.Codigo, req.Codigo);
+
+                if (exp != null) return exp;
             }
 
             (bool, Exception) result = pensumInfra.ActualizarPensum(p);
@@ -224,7 +224,8 @@ namespace Grafo_pensum
         {
             comboBox2.Visible = true;
             label3.Visible = true;
-            obtenerMaterias();
+            (Pensum.Dominio.Pensum, Exception) data = pensumInfra.ObtenerPensum(txtAnio.Text);
+            obtenerMaterias(data.Item1);
         }
 
         private void button2_Click(object sender, EventArgs e)
