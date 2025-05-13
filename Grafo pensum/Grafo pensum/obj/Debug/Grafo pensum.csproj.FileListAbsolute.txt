@@ -72,3 +72,63 @@ C:\Users\tariq\Desktop\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.T
 C:\Users\tariq\Desktop\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\tariq\Desktop\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo pe.ACB95D37.Up2Date
 C:\Users\tariq\Desktop\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.Infra.Vista.fmrCRUDCarrera.resources
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\mongocrypt.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\Grafo pensum.exe.config
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\Grafo pensum.exe
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\Grafo pensum.pdb
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\AWSSDK.Core.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\AWSSDK.SecurityToken.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\DnsClient.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\MongoDB.Bson.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\MongoDB.Driver.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\MongoDB.Libmongocrypt.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\SharpCompress.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\Snappier.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Buffers.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Memory.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Security.AccessControl.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\ZstdSharp.dll
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\AWSSDK.Core.pdb
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\AWSSDK.Core.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\AWSSDK.SecurityToken.pdb
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\AWSSDK.SecurityToken.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\DnsClient.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\MongoDB.Bson.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\MongoDB.Driver.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\Snappier.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Buffers.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Memory.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Security.AccessControl.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo pensum.csproj.AssemblyReference.cache
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.Infra.Vista.fmrCRUDCarrera.resources
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmCRUDMateria.resources
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmCRUDPensum.resources
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmLogin.resources
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmNavbar.resources
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmInicio.resources
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmVerMateria.resources
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmVerPensum.resources
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.Properties.Resources.resources
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo pensum.csproj.GenerateResource.cache
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo pensum.csproj.CoreCompileInputs.cache
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo pe.ACB95D37.Up2Date
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo pensum.exe
+C:\Users\JARVIS\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo pensum.pdb
