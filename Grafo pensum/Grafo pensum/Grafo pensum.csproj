@@ -171,6 +171,13 @@
     <Compile Include="Pensum\DB\PensumInterfazBase.cs" />
     <Compile Include="Pensum\Dominio\PensumInterfaz.cs" />
     <Compile Include="Pensum\Infra\PensumInfra.cs" />
+    <Compile Include="Usuario\DB\Mongo\UsuarioMongo.cs" />
+    <Compile Include="Usuario\DB\Mongo\UsuarioMongoData.cs" />
+    <Compile Include="Usuario\DB\UsuarioDB.cs" />
+    <Compile Include="Usuario\DB\UsuarioInterfazBase.cs" />
+    <Compile Include="Usuario\Dominio\Usuario.cs" />
+    <Compile Include="Usuario\Dominio\UsuarioInterfaz.cs" />
+    <Compile Include="Usuario\Infra\UsuarioInfra.cs" />
     <Compile Include="Vista\fmrCRUDCarrera.cs">
       <SubType>Form</SubType>
     </Compile>
