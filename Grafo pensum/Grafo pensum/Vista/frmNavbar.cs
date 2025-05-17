@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Grafo_pensum.Infra.Vista;
+using Grafo_pensum.Vista;
 
 namespace Grafo_pensum
 {
@@ -78,6 +79,11 @@ namespace Grafo_pensum
         private void tsMantenimiento_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tsCRUDUsuarios_Click(object sender, EventArgs e)
+        {
+            CargarFormulario(new frmCRUDUsuarios());
         }
     }
 }

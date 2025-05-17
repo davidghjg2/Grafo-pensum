@@ -26,8 +26,8 @@ namespace Grafo_pensum.Usuario.DB.Mongo
                 var collection = database.GetCollection<UsuarioMongo>("usuarios");
                 UsuarioMongo data = new UsuarioMongo
                 {
+                    Id = usuario.Id,
                     Nombre = usuario.Nombre,
-                    NickUsuario = usuario.NickUsuario,
                     Contraseña = usuario.Contraseña,
                     Correo = usuario.Correo,
                     NivelUsuario = usuario.NivelUsuario
@@ -54,8 +54,8 @@ namespace Grafo_pensum.Usuario.DB.Mongo
                     Array.Resize(ref data, data.Length + 1);
                     data[data.Length - 1] = new UsuarioMongo
                     {
+                        Id = u.Id,
                         Nombre = u.Nombre,
-                        NickUsuario = u.NickUsuario,
                         Contraseña = u.Contraseña,
                         Correo = u.Correo,
                         NivelUsuario = u.NivelUsuario
@@ -70,13 +70,13 @@ namespace Grafo_pensum.Usuario.DB.Mongo
             }
         }
 
-        // Obtener usuario por Nick 
-        public (DominioUsuario, Exception) ObtenerUsuarioPorNick(string nickUsuario)
+        // Obtener usuario por Id
+        public (DominioUsuario, Exception) ObtenerUsuarioPorId(string id)
         {
             try
             {
                 var collection = database.GetCollection<UsuarioMongo>("usuarios");
-                UsuarioMongo data = collection.Find(u => u.NickUsuario == nickUsuario).FirstOrDefault();
+                UsuarioMongo data = collection.Find(u => u.Id == id).FirstOrDefault();
 
                 if (data == null)
                     return (null, null);
@@ -85,9 +85,7 @@ namespace Grafo_pensum.Usuario.DB.Mongo
                 {
                     Id = data.Id,
                     Nombre = data.Nombre,
-                    NickUsuario = data.NickUsuario,
                     Contraseña = data.Contraseña,
-                    Correo = data.Correo,
                     NivelUsuario = data.NivelUsuario
                 };
                 return (usuario, null);
@@ -114,7 +112,6 @@ namespace Grafo_pensum.Usuario.DB.Mongo
                     {
                         Id = u.Id,
                         Nombre = u.Nombre,
-                        NickUsuario = u.NickUsuario,
                         Contraseña = u.Contraseña,
                         Correo = u.Correo,
                         NivelUsuario = u.NivelUsuario
@@ -138,7 +135,6 @@ namespace Grafo_pensum.Usuario.DB.Mongo
                 var filter = Builders<UsuarioMongo>.Filter.Eq(u => u.Id, usuario.Id);
                 var update = Builders<UsuarioMongo>.Update
                     .Set(u => u.Nombre, usuario.Nombre)
-                    .Set(u => u.NickUsuario, usuario.NickUsuario)
                     .Set(u => u.Contraseña, usuario.Contraseña)
                     .Set(u => u.Correo, usuario.Correo)
                     .Set(u => u.NivelUsuario, usuario.NivelUsuario);

@@ -196,6 +196,12 @@
     <Compile Include="Vista\frmCRUDPensum.Designer.cs">
       <DependentUpon>frmCRUDPensum.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\frmCRUDUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\frmCRUDUsuarios.Designer.cs">
+      <DependentUpon>frmCRUDUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\frmCRUDPensum.resx">
       <DependentUpon>frmCRUDPensum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\frmCRUDUsuarios.resx">
+      <DependentUpon>frmCRUDUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
