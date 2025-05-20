@@ -171,6 +171,14 @@
     <Compile Include="Pensum\DB\PensumInterfazBase.cs" />
     <Compile Include="Pensum\Dominio\PensumInterfaz.cs" />
     <Compile Include="Pensum\Infra\PensumInfra.cs" />
+    <Compile Include="Usuario\DB\Mongo\UsuarioMongo.cs" />
+    <Compile Include="Usuario\DB\Mongo\UsuarioMongoData.cs" />
+    <Compile Include="Usuario\DB\UsuarioDB.cs" />
+    <Compile Include="Usuario\DB\UsuarioInterfazBase.cs" />
+    <Compile Include="Usuario\Dominio\Usuario.cs" />
+    <Compile Include="Usuario\Dominio\UsuarioInterfaz.cs" />
+    <Compile Include="Usuario\Infra\AuthService.cs" />
+    <Compile Include="Usuario\Infra\UsuarioInfra.cs" />
     <Compile Include="Vista\fmrCRUDCarrera.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +196,12 @@
     </Compile>
     <Compile Include="Vista\frmCRUDPensum.Designer.cs">
       <DependentUpon>frmCRUDPensum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\frmCRUDUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\frmCRUDUsuarios.Designer.cs">
+      <DependentUpon>frmCRUDUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\frmLogin.cs">
       <SubType>Form</SubType>
@@ -231,6 +245,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\frmCRUDPensum.resx">
       <DependentUpon>frmCRUDPensum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\frmCRUDUsuarios.resx">
+      <DependentUpon>frmCRUDUsuarios.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
