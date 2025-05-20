@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Grafo_pensum.Carrera.Infra;
 using Grafo_pensum.Pensum.Infra;
+using System.Net.Http.Headers;
+using Newtonsoft.Json;
 
 namespace Grafo_pensum
 {
@@ -24,7 +26,6 @@ namespace Grafo_pensum
             obtenerPensum();
             tableLayoutPanel1.Padding = new Padding(10);
         }
-
         private string ajustarTexto(string texto, int maxCaracteresPorLinea)
         {
             if (texto.Length <= maxCaracteresPorLinea)

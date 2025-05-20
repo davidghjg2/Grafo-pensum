@@ -155,13 +155,20 @@ namespace Grafo_pensum.Pensum.Dominio
 
         private void BFS(ref Materia.Dominio.Materia[] materias, Materia.Dominio.Materia materia, int nivel)
         {
-            if(materia == null)
+           
+
+            if (materia == null)
                 return;
 
             if(nivel == 1)
             {
-                Array.Resize(ref materias, materias.Length + 1);
-                materias[materias.Length - 1] = materia;
+                bool yaExiste = materias.Any(m => m.Codigo == materia.Codigo);
+
+                if (!yaExiste)
+                {
+                    Array.Resize(ref materias, materias.Length + 1);
+                    materias[materias.Length - 1] = materia;
+                }
             }
             else if(nivel > 1)
             {
