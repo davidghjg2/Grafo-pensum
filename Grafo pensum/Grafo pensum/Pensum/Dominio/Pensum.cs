@@ -160,8 +160,13 @@ namespace Grafo_pensum.Pensum.Dominio
 
             if(nivel == 1)
             {
-                Array.Resize(ref materias, materias.Length + 1);
-                materias[materias.Length - 1] = materia;
+                bool yaExiste = materias.Any(m => m.Codigo == materia.Codigo);
+
+                if (!yaExiste)
+                {
+                    Array.Resize(ref materias, materias.Length + 1);
+                    materias[materias.Length - 1] = materia;
+                }
             }
             else if(nivel > 1)
             {

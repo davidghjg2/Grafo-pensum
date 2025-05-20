@@ -36,12 +36,11 @@
             this.tsCRUDMateria = new System.Windows.Forms.ToolStripMenuItem();
             this.tsCRUDPensum = new System.Windows.Forms.ToolStripMenuItem();
             this.tsCRUDCarrera = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsCRUDUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.tsVer = new System.Windows.Forms.ToolStripDropDownButton();
-            this.tsMateria = new System.Windows.Forms.ToolStripMenuItem();
             this.tsPensum = new System.Windows.Forms.ToolStripMenuItem();
             this.tsLogOut = new System.Windows.Forms.ToolStripButton();
-            this.tsCRUDUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.tsNav.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,13 +50,13 @@
             this.Inicio.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.Inicio.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Inicio.Name = "Inicio";
-            this.Inicio.Size = new System.Drawing.Size(29, 59);
+            this.Inicio.Size = new System.Drawing.Size(23, 47);
             this.Inicio.Text = "toolStripButton1";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 62);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 50);
             // 
             // tsNav
             // 
@@ -74,7 +73,7 @@
             this.tsLogOut});
             this.tsNav.Location = new System.Drawing.Point(0, 0);
             this.tsNav.Name = "tsNav";
-            this.tsNav.Size = new System.Drawing.Size(1732, 62);
+            this.tsNav.Size = new System.Drawing.Size(1299, 50);
             this.tsNav.TabIndex = 15;
             this.tsNav.Text = "toolStrip1";
             // 
@@ -91,7 +90,7 @@
             this.tsMantenimiento.Image = ((System.Drawing.Image)(resources.GetObject("tsMantenimiento.Image")));
             this.tsMantenimiento.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsMantenimiento.Name = "tsMantenimiento";
-            this.tsMantenimiento.Size = new System.Drawing.Size(132, 59);
+            this.tsMantenimiento.Size = new System.Drawing.Size(107, 47);
             this.tsMantenimiento.Text = "Mantenimiento";
             this.tsMantenimiento.Click += new System.EventHandler(this.tsMantenimiento_Click);
             // 
@@ -100,7 +99,7 @@
             this.tsCRUDMateria.BackColor = System.Drawing.Color.LightGreen;
             this.tsCRUDMateria.ForeColor = System.Drawing.Color.DarkGreen;
             this.tsCRUDMateria.Name = "tsCRUDMateria";
-            this.tsCRUDMateria.Size = new System.Drawing.Size(224, 26);
+            this.tsCRUDMateria.Size = new System.Drawing.Size(128, 22);
             this.tsCRUDMateria.Text = "Materia";
             this.tsCRUDMateria.Click += new System.EventHandler(this.tsCRUDMateria_Click);
             // 
@@ -109,7 +108,7 @@
             this.tsCRUDPensum.BackColor = System.Drawing.Color.LightGreen;
             this.tsCRUDPensum.ForeColor = System.Drawing.Color.DarkGreen;
             this.tsCRUDPensum.Name = "tsCRUDPensum";
-            this.tsCRUDPensum.Size = new System.Drawing.Size(224, 26);
+            this.tsCRUDPensum.Size = new System.Drawing.Size(128, 22);
             this.tsCRUDPensum.Text = "Pénsum";
             this.tsCRUDPensum.Click += new System.EventHandler(this.tsCRUDPensum_Click);
             // 
@@ -118,9 +117,18 @@
             this.tsCRUDCarrera.BackColor = System.Drawing.Color.LightGreen;
             this.tsCRUDCarrera.ForeColor = System.Drawing.Color.DarkGreen;
             this.tsCRUDCarrera.Name = "tsCRUDCarrera";
-            this.tsCRUDCarrera.Size = new System.Drawing.Size(224, 26);
+            this.tsCRUDCarrera.Size = new System.Drawing.Size(128, 22);
             this.tsCRUDCarrera.Text = "Carrera";
             this.tsCRUDCarrera.Click += new System.EventHandler(this.tsCRUDCarrera_Click);
+            // 
+            // tsCRUDUsuarios
+            // 
+            this.tsCRUDUsuarios.BackColor = System.Drawing.Color.LightGreen;
+            this.tsCRUDUsuarios.ForeColor = System.Drawing.Color.DarkGreen;
+            this.tsCRUDUsuarios.Name = "tsCRUDUsuarios";
+            this.tsCRUDUsuarios.Size = new System.Drawing.Size(128, 22);
+            this.tsCRUDUsuarios.Text = "Usuarios";
+            this.tsCRUDUsuarios.Click += new System.EventHandler(this.tsCRUDUsuarios_Click);
             // 
             // toolStripButton3
             // 
@@ -131,38 +139,28 @@
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(29, 59);
+            this.toolStripButton3.Size = new System.Drawing.Size(23, 47);
             this.toolStripButton3.Text = "toolStripButton3";
             // 
             // tsVer
             // 
             this.tsVer.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.tsVer.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsMateria,
             this.tsPensum});
             this.tsVer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tsVer.ForeColor = System.Drawing.Color.DarkGreen;
             this.tsVer.Image = ((System.Drawing.Image)(resources.GetObject("tsVer.Image")));
             this.tsVer.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsVer.Name = "tsVer";
-            this.tsVer.Size = new System.Drawing.Size(49, 59);
+            this.tsVer.Size = new System.Drawing.Size(41, 47);
             this.tsVer.Text = "Ver";
-            // 
-            // tsMateria
-            // 
-            this.tsMateria.BackColor = System.Drawing.Color.LightGreen;
-            this.tsMateria.ForeColor = System.Drawing.Color.DarkGreen;
-            this.tsMateria.Name = "tsMateria";
-            this.tsMateria.Size = new System.Drawing.Size(153, 26);
-            this.tsMateria.Text = "Materia";
-            this.tsMateria.Click += new System.EventHandler(this.tsMateria_Click);
             // 
             // tsPensum
             // 
             this.tsPensum.BackColor = System.Drawing.Color.LightGreen;
             this.tsPensum.ForeColor = System.Drawing.Color.DarkGreen;
             this.tsPensum.Name = "tsPensum";
-            this.tsPensum.Size = new System.Drawing.Size(153, 26);
+            this.tsPensum.Size = new System.Drawing.Size(180, 22);
             this.tsPensum.Text = "Pénsum";
             this.tsPensum.Click += new System.EventHandler(this.tsPensum_Click);
             // 
@@ -175,26 +173,16 @@
             this.tsLogOut.Image = ((System.Drawing.Image)(resources.GetObject("tsLogOut.Image")));
             this.tsLogOut.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsLogOut.Name = "tsLogOut";
-            this.tsLogOut.Size = new System.Drawing.Size(123, 59);
+            this.tsLogOut.Size = new System.Drawing.Size(103, 47);
             this.tsLogOut.Text = "Cerrar Sesión";
             this.tsLogOut.Click += new System.EventHandler(this.tsLogOut_Click);
             // 
-            // tsCRUDUsuarios
-            // 
-            this.tsCRUDUsuarios.BackColor = System.Drawing.Color.LightGreen;
-            this.tsCRUDUsuarios.ForeColor = System.Drawing.Color.DarkGreen;
-            this.tsCRUDUsuarios.Name = "tsCRUDUsuarios";
-            this.tsCRUDUsuarios.Size = new System.Drawing.Size(224, 26);
-            this.tsCRUDUsuarios.Text = "Usuarios";
-            this.tsCRUDUsuarios.Click += new System.EventHandler(this.tsCRUDUsuarios_Click);
-            // 
             // frmNavbar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1732, 697);
+            this.ClientSize = new System.Drawing.Size(1299, 566);
             this.Controls.Add(this.tsNav);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmNavbar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmNavbar";
@@ -213,7 +201,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsCRUDPensum;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripDropDownButton tsVer;
-        private System.Windows.Forms.ToolStripMenuItem tsMateria;
         private System.Windows.Forms.ToolStripMenuItem tsPensum;
         private System.Windows.Forms.ToolStripButton tsLogOut;
         private System.Windows.Forms.ToolStrip tsNav;

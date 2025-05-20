@@ -33,6 +33,13 @@ namespace Grafo_pensum
             obtenerPensums();
         }
 
+        private bool vacios()
+        {
+            if(txtAnio.Text.Trim() == "")
+                return false;
+            else return true;
+        }
+
         private void obtenerCarreras()
         {
             (Carrera.Dominio.Carrera[], Exception) data = carreraInfra.ObtenerCarreras();
@@ -194,6 +201,13 @@ namespace Grafo_pensum
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            if (!vacios())
+            {
+                MessageBox.Show("No se permiten campos vacios");
+                return;
+            }
+
             Exception ex = insertarPensum();
 
             if (ex != null)

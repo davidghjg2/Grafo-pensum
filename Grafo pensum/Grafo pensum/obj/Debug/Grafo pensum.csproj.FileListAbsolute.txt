@@ -193,3 +193,4 @@ C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pen
 C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo pe.ACB95D37.Up2Date
 C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo pensum.exe
 C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo pensum.pdb
+C:\Users\tariq\Desktop\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.Vista.frmCRUDUsuarios.resources
