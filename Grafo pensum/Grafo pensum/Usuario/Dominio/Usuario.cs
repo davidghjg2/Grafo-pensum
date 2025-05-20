@@ -10,31 +10,43 @@ namespace Grafo_pensum.Usuario.Dominio
 {
     public class Usuario
     {
+        [BsonId]
+        [BsonRepresentation(BsonType.String)]
         public string Id { get; set; }
+
+        [BsonElement("nombre")]
         public string Nombre { get; set; }
-        public string Apellido {  get; set; }
+
+        [BsonElement("apellido")]
+        public string Apellido { get; set; }
+
+        [BsonElement("contraseña")]
         public string Contraseña { get; set; }
 
-        public string Correo {  get; set; }
-        public int NivelUsuario {  get; set; }
+        [BsonElement("correo")]
+        public string Correo { get; set; }
+
+        [BsonElement("TipoUsuario")]
+        public int TipoUsuario { get; set; }
 
         public Usuario()
         {
+            Id = string.Empty;
             Nombre = string.Empty;
             Apellido = string.Empty;
             Contraseña = string.Empty;
             Correo = string.Empty;
-            NivelUsuario = 2;
+            TipoUsuario = 2;
         }
 
-        public Usuario (string id, string nombre, string apellido, string contraseña, string correo, int nivelUsuario)
+        public Usuario(string id, string nombre, string apellido, string contraseña, string correo, int tipoUsuario)
         {
             Id = id;
             Nombre = nombre;
             Apellido = apellido;
             Contraseña = contraseña;
             Correo = correo;
-            NivelUsuario = nivelUsuario;
+            TipoUsuario = tipoUsuario;
         }
     }
 }

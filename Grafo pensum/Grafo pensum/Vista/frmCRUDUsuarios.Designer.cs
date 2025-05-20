@@ -34,24 +34,24 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.cmbNivelUsuario = new System.Windows.Forms.ComboBox();
+            this.cmbTipoUsuario = new System.Windows.Forms.ComboBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.colTipoUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colContraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCorreo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
-            this.colId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colContraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCorreo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbDatos = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -122,13 +122,13 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "*Correo electrónico";
             // 
-            // cmbNivelUsuario
+            // cmbTipoUsuario
             // 
-            this.cmbNivelUsuario.FormattingEnabled = true;
-            this.cmbNivelUsuario.Location = new System.Drawing.Point(184, 35);
-            this.cmbNivelUsuario.Name = "cmbNivelUsuario";
-            this.cmbNivelUsuario.Size = new System.Drawing.Size(203, 28);
-            this.cmbNivelUsuario.TabIndex = 1;
+            this.cmbTipoUsuario.FormattingEnabled = true;
+            this.cmbTipoUsuario.Location = new System.Drawing.Point(184, 35);
+            this.cmbTipoUsuario.Name = "cmbTipoUsuario";
+            this.cmbTipoUsuario.Size = new System.Drawing.Size(203, 28);
+            this.cmbTipoUsuario.TabIndex = 1;
             // 
             // txtId
             // 
@@ -170,8 +170,8 @@
             this.dgvUsuarios.AllowUserToAddRows = false;
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colTipoUsuario,
             this.colId,
-            this.colUsuario,
             this.colContraseña,
             this.colNombre,
             this.colApellido,
@@ -183,88 +183,22 @@
             this.dgvUsuarios.RowTemplate.Height = 24;
             this.dgvUsuarios.Size = new System.Drawing.Size(1028, 706);
             this.dgvUsuarios.TabIndex = 3;
-            this.dgvUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellContentClick);
-            this.dgvUsuarios.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellContentDoubleClick);
+            this.dgvUsuarios.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellDoubleClick);
             // 
-            // btnAgregar
+            // colTipoUsuario
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.LightGreen;
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnAgregar.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnAgregar.Location = new System.Drawing.Point(28, 33);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(119, 42);
-            this.btnAgregar.TabIndex = 4;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = false;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.BackColor = System.Drawing.Color.LightGreen;
-            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnActualizar.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnActualizar.Location = new System.Drawing.Point(158, 33);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(119, 42);
-            this.btnActualizar.TabIndex = 4;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = false;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.LightGreen;
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnBuscar.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnBuscar.Location = new System.Drawing.Point(28, 93);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(379, 37);
-            this.btnBuscar.TabIndex = 4;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BackColor = System.Drawing.Color.LightGreen;
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnEliminar.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnEliminar.Location = new System.Drawing.Point(288, 33);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(119, 42);
-            this.btnEliminar.TabIndex = 4;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.LightGreen;
-            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnLimpiar.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnLimpiar.Location = new System.Drawing.Point(158, 363);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(119, 42);
-            this.btnLimpiar.TabIndex = 5;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = false;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            this.colTipoUsuario.HeaderText = "Tipo Usuario";
+            this.colTipoUsuario.MinimumWidth = 6;
+            this.colTipoUsuario.Name = "colTipoUsuario";
+            this.colTipoUsuario.ReadOnly = true;
+            this.colTipoUsuario.Width = 120;
             // 
             // colId
             // 
-            this.colId.HeaderText = "Tipo Usuario";
+            this.colId.HeaderText = "Usuario";
             this.colId.MinimumWidth = 6;
             this.colId.Name = "colId";
-            this.colId.ReadOnly = true;
             this.colId.Width = 120;
-            // 
-            // colUsuario
-            // 
-            this.colUsuario.HeaderText = "Usuario";
-            this.colUsuario.MinimumWidth = 6;
-            this.colUsuario.Name = "colUsuario";
-            this.colUsuario.Width = 120;
             // 
             // colContraseña
             // 
@@ -294,6 +228,76 @@
             this.colCorreo.Name = "colCorreo";
             this.colCorreo.Width = 120;
             // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.Color.LightGreen;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnAgregar.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btnAgregar.Location = new System.Drawing.Point(28, 33);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(119, 42);
+            this.btnAgregar.TabIndex = 4;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.BackColor = System.Drawing.Color.LightGreen;
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnActualizar.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btnActualizar.Location = new System.Drawing.Point(158, 33);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(119, 42);
+            this.btnActualizar.TabIndex = 4;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.LightGreen;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnBuscar.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btnBuscar.Location = new System.Drawing.Point(28, 93);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(379, 37);
+            this.btnBuscar.TabIndex = 4;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.LightGreen;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnEliminar.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btnEliminar.Location = new System.Drawing.Point(288, 33);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(119, 42);
+            this.btnEliminar.TabIndex = 4;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.LightGreen;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnLimpiar.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btnLimpiar.Location = new System.Drawing.Point(158, 363);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(119, 42);
+            this.btnLimpiar.TabIndex = 5;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // gbDatos
             // 
             this.gbDatos.Controls.Add(this.btnLimpiar);
@@ -305,7 +309,7 @@
             this.gbDatos.Controls.Add(this.label5);
             this.gbDatos.Controls.Add(this.txtCorreo);
             this.gbDatos.Controls.Add(this.label6);
-            this.gbDatos.Controls.Add(this.cmbNivelUsuario);
+            this.gbDatos.Controls.Add(this.cmbTipoUsuario);
             this.gbDatos.Controls.Add(this.txtNombre);
             this.gbDatos.Controls.Add(this.txtId);
             this.gbDatos.Controls.Add(this.txtContraseña);
@@ -392,7 +396,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cmbNivelUsuario;
+        private System.Windows.Forms.ComboBox cmbTipoUsuario;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.TextBox txtNombre;
@@ -404,16 +408,16 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnLimpiar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colUsuario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colContraseña;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colApellido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colCorreo;
         private System.Windows.Forms.GroupBox gbDatos;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTipoUsuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colContraseña;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colApellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCorreo;
     }
 }

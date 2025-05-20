@@ -11,14 +11,14 @@ namespace Grafo_pensum.Usuario.DB.Mongo
     internal class UsuarioMongo
     {
         [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
+        [BsonRepresentation(BsonType.String)]
         public string Id { get; set; }
 
         [BsonElement("nombre")]
         public string Nombre { get; set; }
 
-        [BsonElement("nickUsuario")]
-        public string NickUsuario { get; set; }
+        [BsonElement("apellido")]
+        public string Apellido { get; set; }
 
         [BsonElement("contraseña")]
         public string Contraseña { get; set; }
@@ -26,26 +26,27 @@ namespace Grafo_pensum.Usuario.DB.Mongo
         [BsonElement("correo")]
         public string Correo { get; set; }
 
-        [BsonElement("nivelUsuario")]
-        public int NivelUsuario { get; set; }
+        [BsonElement("TipoUsuario")]
+        public int TipoUsuario { get; set; }
 
         public UsuarioMongo() 
         {
+            Id = string.Empty;
             Nombre = string.Empty;
-            NickUsuario = string.Empty;
+            Apellido = string.Empty;
             Contraseña = string.Empty;
             Correo = string.Empty;
-            NivelUsuario = 2;
+            TipoUsuario = 2;
         }
 
-        public UsuarioMongo(string id, string nombre, string nickUsuario, string contraseña, string correo, int nivelUsuario)
+        public UsuarioMongo(string id, string nombre, string apellido, string contraseña, string correo, int tipoUsuario)
         {
             Id = id;
             Nombre = nombre;
-            NickUsuario = nickUsuario;
+            Apellido = apellido;
             Contraseña = contraseña;
             Correo = correo;
-            NivelUsuario = nivelUsuario;
+            TipoUsuario = tipoUsuario;
         }
     }
 }

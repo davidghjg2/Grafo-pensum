@@ -28,11 +28,20 @@ namespace Grafo_pensum.Vista
 
         private void HabilitarBotones(bool edicion)
         {
+            // Botón Agregar
             btnAgregar.Enabled = !edicion;
+            btnAgregar.BackColor = btnAgregar.Enabled ? Color.LightGreen : Color.LightGray;
+            // Botón Actualizar
             btnActualizar.Enabled = edicion;
+            btnActualizar.BackColor = btnActualizar.Enabled ? Color.LightGreen : Color.LightGray;
+            // Botón Eliminar
             btnEliminar.Enabled = edicion;
+            btnEliminar.BackColor = btnEliminar.Enabled ? Color.LightGreen : Color.LightGray;
+            // Botón Buscar
             btnBuscar.Enabled = !edicion;
+            btnBuscar.BackColor = btnBuscar.Enabled ? Color.LightGreen : Color.LightGray;
         }
+
 
         private void LimpiarCampos()
         {
@@ -41,45 +50,54 @@ namespace Grafo_pensum.Vista
             txtApellido.Clear();
             txtContraseña.Clear();
             txtCorreo.Clear();
-            cmbNivelUsuario.SelectedIndex = -1;
+            cmbTipoUsuario.SelectedIndex = -1;
             usuarioSeleccionado = null;
         }
                
 
         private void ObtenerTodosUsuarios()
         {
-            dgvUsuarios.Rows.Clear();
-            var (usuarios, error) = usuarioInfra.ObtenerTodosUsuarios();
+            try
+            { 
+                dgvUsuarios.Rows.Clear();
+                var (usuarios, error) = usuarioInfra.ObtenerTodosUsuarios();
 
-            if (error != null)
-            {
-                MessageBox.Show($"Error al cargar usuarios: {error.Message}", "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                if (error != null)
+                {
+                    MessageBox.Show($"Error al cargar usuarios: {error.Message}", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                foreach (var usuario in usuarios)
+                {
+                    dgvUsuarios.Rows.Add(
+                        usuario.TipoUsuario == 1 ? "Administrador" : "Estudiante",
+                        usuario.Id,
+                        usuario.Contraseña,
+                        usuario.Nombre,
+                        usuario.Apellido,
+                        usuario.Correo
+                    );
+                }
             }
-
-            foreach (var usuario in usuarios)
+            catch (Exception ex)
             {
-                dgvUsuarios.Rows.Add(
-                    usuario.Id,
-                    usuario.Nombre,
-                    usuario.Apellido,
-                    usuario.NivelUsuario == 1 ? "Administrador" : "Estudiante",
-                    usuario.Correo
-                );
+                MessageBox.Show($"Error inesperado: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void CargarNivelesUsuario()
         {
-            cmbNivelUsuario.Items.Add("Administrador");
-            cmbNivelUsuario.Items.Add("Estudiante");
-            cmbNivelUsuario.SelectedIndex = 0;
+            cmbTipoUsuario.Items.Add("Administrador");
+            cmbTipoUsuario.Items.Add("Estudiante");
+            cmbTipoUsuario.SelectedIndex = 0;
         }
 
         private bool ValidarCampos()
         {
-            // Validación de campos vacíos (como ya tenías)
+            // Validación de campos vacíos
             if (string.IsNullOrWhiteSpace(txtId.Text) ||
                 string.IsNullOrWhiteSpace(txtNombre.Text) ||
                 string.IsNullOrWhiteSpace(txtApellido.Text) ||
@@ -91,7 +109,7 @@ namespace Grafo_pensum.Vista
                 return false;
             }
 
-            // Validación de solo letras en Nombre y Apellido (nuevo)
+            // Validación de solo letras en Nombre y Apellido
             if (txtNombre.Text.Any(char.IsDigit) || txtApellido.Text.Any(char.IsDigit))
             {
                 MessageBox.Show("Nombre y Apellido no deben contener números", "Error",
@@ -99,7 +117,7 @@ namespace Grafo_pensum.Vista
                 return false;
             }
 
-            // Validación básica de correo (nuevo)
+            // Validación básica de correo
             if (!txtCorreo.Text.Contains("@") || !txtCorreo.Text.Contains("."))
             {
                 MessageBox.Show("Ingrese un correo válido", "Error",
@@ -133,7 +151,7 @@ namespace Grafo_pensum.Vista
             txtApellido.Text = usuario.Apellido;
             txtContraseña.Text = usuario.Contraseña;
             txtCorreo.Text = usuario.Correo;
-            cmbNivelUsuario.SelectedIndex = usuario.NivelUsuario - 1;
+            cmbTipoUsuario.SelectedIndex = usuario.TipoUsuario - 1;
 
             HabilitarBotones(true);
         }
@@ -142,6 +160,21 @@ namespace Grafo_pensum.Vista
         {
             if (!ValidarCampos()) return;
 
+            if (IdYaExiste(txtId.Text))
+            {
+                MessageBox.Show("El ID ya está registrado. Ingrese uno diferente.", "Advertencia",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (CorreoYaExiste(txtCorreo.Text))
+            {
+                MessageBox.Show("El correo ya está registrado. Ingrese uno diferente.", "Advertencia",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
             var nuevoUsuario = new DominioUsuario
             {
                 Id = txtId.Text,
@@ -149,7 +182,7 @@ namespace Grafo_pensum.Vista
                 Apellido = txtApellido.Text,
                 Contraseña = txtContraseña.Text,
                 Correo = txtCorreo.Text,
-                NivelUsuario = cmbNivelUsuario.SelectedIndex + 1
+                TipoUsuario = cmbTipoUsuario.SelectedIndex + 1
             };
 
             var (success, error) = usuarioInfra.InsertarUsuario(nuevoUsuario);
@@ -163,6 +196,7 @@ namespace Grafo_pensum.Vista
             MessageBox.Show("Usuario agregado correctamente", "Éxito",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
             LimpiarCampos();
+            HabilitarBotones(false);
             ObtenerTodosUsuarios();
         }
 
@@ -170,11 +204,19 @@ namespace Grafo_pensum.Vista
         {
             if (!ValidarCampos() || usuarioSeleccionado == null) return;
 
+            if (!usuarioSeleccionado.Correo.Equals(txtCorreo.Text, StringComparison.OrdinalIgnoreCase)
+                 && CorreoYaExiste(txtCorreo.Text))
+            {
+                MessageBox.Show("El nuevo correo ya está en uso por otro usuario.", "Advertencia",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             usuarioSeleccionado.Nombre = txtNombre.Text;
             usuarioSeleccionado.Apellido = txtApellido.Text;
             usuarioSeleccionado.Contraseña = txtContraseña.Text;
             usuarioSeleccionado.Correo = txtCorreo.Text;
-            usuarioSeleccionado.NivelUsuario = cmbNivelUsuario.SelectedIndex + 1;
+            usuarioSeleccionado.TipoUsuario = cmbTipoUsuario.SelectedIndex + 1;
 
             var (success, error) = usuarioInfra.ActualizarUsuario(usuarioSeleccionado);
             if (error != null)
@@ -183,6 +225,8 @@ namespace Grafo_pensum.Vista
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
+            
 
             MessageBox.Show("Usuario actualizado correctamente", "Éxito",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -220,25 +264,6 @@ namespace Grafo_pensum.Vista
             ObtenerTodosUsuarios();
         }
 
-        private void dgvUsuarios_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex < 0) return;
-
-            var id = dgvUsuarios.Rows[e.RowIndex].Cells["colId"].Value.ToString();
-            var (usuario, error) = usuarioInfra.ObtenerUsuarioPorId(id);
-
-            if (error != null || usuario == null) return;
-
-            usuarioSeleccionado = usuario;
-            txtId.Text = usuario.Id;
-            txtNombre.Text = usuario.Nombre;
-            txtApellido.Text = usuario.Apellido;
-            txtContraseña.Text = usuario.Contraseña;
-            txtCorreo.Text = usuario.Correo;
-            cmbNivelUsuario.SelectedIndex = usuario.NivelUsuario - 1;
-
-            HabilitarBotones(true);
-        }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
@@ -246,9 +271,44 @@ namespace Grafo_pensum.Vista
             HabilitarBotones(false);
         }
 
-        private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvUsuarios_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex < 0) return;
 
+            // Obtener el ID (usuario) desde la columna colId
+            string id = dgvUsuarios.Rows[e.RowIndex].Cells["colId"].Value?.ToString();
+            if (string.IsNullOrEmpty(id)) return;
+
+            // Buscar el usuario por su ID
+            var (usuario, error) = usuarioInfra.ObtenerUsuarioPorId(id);
+            if (error != null || usuario == null) return;
+
+            // Cargar los datos en los TextBox
+            usuarioSeleccionado = usuario;
+            txtId.Text = usuario.Id;
+            txtNombre.Text = usuario.Nombre;
+            txtApellido.Text = usuario.Apellido;
+            txtContraseña.Text = usuario.Contraseña;
+            txtCorreo.Text = usuario.Correo;
+            cmbTipoUsuario.SelectedIndex = usuario.TipoUsuario - 1;
+
+            HabilitarBotones(true);
+        }
+
+        private bool IdYaExiste(string id)
+        {
+            var (usuarios, error) = usuarioInfra.ObtenerTodosUsuarios();
+            if (error != null) return false;
+
+            return usuarios.Any(u => u.Id.Equals(id, StringComparison.OrdinalIgnoreCase));
+        }
+
+        private bool CorreoYaExiste(string correo)
+        {
+            var (usuarios, error) = usuarioInfra.ObtenerTodosUsuarios();
+            if (error != null) return false;
+
+            return usuarios.Any(u => u.Correo.Equals(correo, StringComparison.OrdinalIgnoreCase));
         }
     }
 }

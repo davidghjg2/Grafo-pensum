@@ -181,6 +181,7 @@ C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pen
 C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.Infra.Vista.fmrCRUDCarrera.resources
 C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmCRUDMateria.resources
 C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmCRUDPensum.resources
+C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.Vista.frmCRUDUsuarios.resources
 C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmLogin.resources
 C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmNavbar.resources
 C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.frmInicio.resources
@@ -192,4 +193,3 @@ C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pen
 C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo pe.ACB95D37.Up2Date
 C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo pensum.exe
 C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo pensum.pdb
-C:\Users\Alejandro Gonzalez\Documents\GitHub\Grafo-pensum\Grafo pensum\Grafo pensum\obj\Debug\Grafo_pensum.Vista.frmCRUDUsuarios.resources

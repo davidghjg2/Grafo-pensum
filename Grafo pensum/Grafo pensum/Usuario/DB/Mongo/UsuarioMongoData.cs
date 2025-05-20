@@ -28,9 +28,10 @@ namespace Grafo_pensum.Usuario.DB.Mongo
                 {
                     Id = usuario.Id,
                     Nombre = usuario.Nombre,
+                    Apellido = usuario.Apellido,
                     Contraseña = usuario.Contraseña,
                     Correo = usuario.Correo,
-                    NivelUsuario = usuario.NivelUsuario
+                    TipoUsuario = usuario.TipoUsuario
                 };
                 collection.InsertOne(data);
                 return (true, null);
@@ -56,9 +57,10 @@ namespace Grafo_pensum.Usuario.DB.Mongo
                     {
                         Id = u.Id,
                         Nombre = u.Nombre,
+                        Apellido = u.Apellido,
                         Contraseña = u.Contraseña,
                         Correo = u.Correo,
-                        NivelUsuario = u.NivelUsuario
+                        TipoUsuario = u.TipoUsuario
                     };
                 }
                 collection.InsertMany(data);
@@ -85,8 +87,10 @@ namespace Grafo_pensum.Usuario.DB.Mongo
                 {
                     Id = data.Id,
                     Nombre = data.Nombre,
+                    Apellido = data.Apellido,
                     Contraseña = data.Contraseña,
-                    NivelUsuario = data.NivelUsuario
+                    Correo = data.Correo,
+                    TipoUsuario = data.TipoUsuario
                 };
                 return (usuario, null);
             }
@@ -112,9 +116,10 @@ namespace Grafo_pensum.Usuario.DB.Mongo
                     {
                         Id = u.Id,
                         Nombre = u.Nombre,
+                        Apellido = u.Apellido,
                         Contraseña = u.Contraseña,
                         Correo = u.Correo,
-                        NivelUsuario = u.NivelUsuario
+                        TipoUsuario = u.TipoUsuario
                     };
                 }
                 return (retorno, null);
@@ -135,9 +140,10 @@ namespace Grafo_pensum.Usuario.DB.Mongo
                 var filter = Builders<UsuarioMongo>.Filter.Eq(u => u.Id, usuario.Id);
                 var update = Builders<UsuarioMongo>.Update
                     .Set(u => u.Nombre, usuario.Nombre)
+                    .Set(u => u.Apellido, usuario.Apellido)
                     .Set(u => u.Contraseña, usuario.Contraseña)
                     .Set(u => u.Correo, usuario.Correo)
-                    .Set(u => u.NivelUsuario, usuario.NivelUsuario);
+                    .Set(u => u.TipoUsuario, usuario.TipoUsuario);
 
                 collection.UpdateOne(filter, update);
                 return (true, null);

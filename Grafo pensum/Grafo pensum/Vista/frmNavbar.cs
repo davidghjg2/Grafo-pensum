@@ -9,17 +9,21 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Grafo_pensum.Infra.Vista;
 using Grafo_pensum.Vista;
+using UsuarioDominio = Grafo_pensum.Usuario.Dominio.Usuario;
 
 namespace Grafo_pensum
 {
     public partial class frmNavbar : Form
     {
         private Panel panelContenedor;
-        public frmNavbar()
+        private UsuarioDominio usuarioActual;
+
+        public frmNavbar(UsuarioDominio usuario)
         {
             InitializeComponent();
+            usuarioActual = usuario;
             InicializarPanel();
-
+            ConfigurarAcceso();
         }
         private void InicializarPanel()
         {
@@ -30,6 +34,13 @@ namespace Grafo_pensum
             this.Controls.Add(panelContenedor);
 
             CargarFormulario(new frmInicio());
+        }
+        private void ConfigurarAcceso()
+        {
+            if (usuarioActual.TipoUsuario == 2) // Estudiante
+            {
+                tsMantenimiento.Visible = false;
+            }
         }
         private void CargarFormulario(Form form)
         {

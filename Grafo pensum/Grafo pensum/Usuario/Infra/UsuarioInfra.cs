@@ -23,8 +23,7 @@ namespace Grafo_pensum.Usuario.Infra
 
         public (Dominio.Usuario, Exception) ObtenerUsuarioPorId(string id)
         {
-            Dominio.Usuario usuario = new Dominio.Usuario();
-            return (usuario, null);
+            return db.ObtenerUsuarioPorId(id);
         }
 
         public (Dominio.Usuario[], Exception) ObtenerTodosUsuarios()
