@@ -41,6 +41,7 @@ namespace Grafo_pensum
             }
             else
             {
+                MessageBox.Show("Usuario y/o contraseña incorrectos", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtUsuario.Clear();
                 maskedTextBox1.Clear();
             }
