@@ -76,14 +76,14 @@ namespace Grafo_pensum
 
             var lblNumero = new Label
             {
-                Text = $"Numero: {objeto.uv}",
+                Text = $"Numero: {objeto.Codigo}",
                 Location = new Point(10, 40),
                 AutoSize = true
             };
 
             var lblCodigo = new Label
             {
-                Text = $"Uv: {objeto.Codigo}",
+                Text = $"Uv: {objeto.uv}",
                 Location = new Point(10, 70),
                 AutoSize = true
             };
@@ -114,6 +114,12 @@ namespace Grafo_pensum
         {
             Pensum.Dominio.Pensum pensum = p;
             Materia.Dominio.Materia[] m = p.BFS();
+
+            if(m == null)
+            {
+                MessageBox.Show("Este pensum no tiene datos");
+                return;
+            }
 
             tableLayoutPanel1.Controls.Clear();
             tableLayoutPanel1.RowStyles.Clear();
