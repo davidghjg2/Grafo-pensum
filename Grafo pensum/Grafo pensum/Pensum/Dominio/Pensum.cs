@@ -222,7 +222,10 @@ namespace Grafo_pensum.Pensum.Dominio
         {
             restaurar();
             Materia.Dominio.Materia[] datos = new Materia.Dominio.Materia[0];
-            
+
+            if (this.nodos.Length == 0)
+                return null;
+
             int altura = alturaGrafo(nodos[0]);
 
             for (int i = 1; i <= altura; i++)
